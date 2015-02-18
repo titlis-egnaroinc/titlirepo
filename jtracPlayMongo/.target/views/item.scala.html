@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form example</title>
+  </head>
+  <body>
+  
+    <form action = "@routes.IssueController.itemInsert" method="post" autocomplete="on">
+      
+      Summary :<input type="text" name="summary"><br>
+      
+      Description : <br />
+      <textarea rows="5" cols="50" name="description">
+      Enter description here...
+      </textarea> 
+      </br>
+      <table cellpadding="2" width="20%" bgcolor="99FFFF" align="center" cellspacing="2">
+      	<tr>
+		  <td>Priority</td>
+		  <td><select name="Priority">
+			<option value="-1" selected>select..</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">Low</option>
+            <option value="High">High</option>
+          <select></td>
+        </tr>
+      </table>
+      <input type="submit">
+    </form>
+  
+  </body>
+</html>
